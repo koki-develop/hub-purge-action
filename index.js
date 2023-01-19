@@ -5,8 +5,8 @@ const repo = "koki-develop";
 const owner = "koki-develop";
 
 const main = async () => {
-  const idToken = core.getIDToken();
-  const octo = github.getOctokit(idToken);
+  const githubToken = core.getInput("token");
+  const octo = github.getOctokit(githubToken);
   const { data } = await octo.rest.repos.get({
     repo,
     owner,
