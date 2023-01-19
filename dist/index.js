@@ -2820,7 +2820,7 @@ var __webpack_exports__ = {};
 const core = __nccwpck_require__(186);
 
 try {
-  console.log("Hello World");
+  console.log("Hello World, 1");
 } catch (error) {
   core.setFailed(error.message);
 }
