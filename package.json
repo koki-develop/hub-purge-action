@@ -1,6 +1,7 @@
 {
   "name": "hub-purge-action",
   "author": "koki-develop <kou.pg.0131@gmail.com>",
+  "main": "dist/index.js",
   "license": "MIT",
   "private": true,
   "scripts": {

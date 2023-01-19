@@ -2,4 +2,4 @@ name: 'Hub Purge'
 description: 'Action to clear GitHub image caches.'
 runs:
   using: 'node16'
-  main: 'index.js'
+  main: 'dist/index.js'
