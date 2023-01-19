@@ -36,3 +36,9 @@ jobs:
             git commit -m "update dist"
             git push origin main
           fi
+
+  purge:
+    needs: [update-dist]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: koki-develop/hub-purge-action@main
