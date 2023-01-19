@@ -1,5 +1,9 @@
-name: 'Hub Purge'
-description: 'Action to clear GitHub image caches.'
+name: "Hub Purge"
+description: "Action to clear GitHub image caches."
+inputs:
+  token:
+    description: GitHub Secret Token.
+    required: true
 runs:
-  using: 'node16'
-  main: 'dist/index.js'
+  using: "node16"
+  main: "dist/index.js"
