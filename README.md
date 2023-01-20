@@ -9,7 +9,7 @@ Action to clear GitHub image caches.
 # Usage
 
 ```yaml
-- uses: koki-develop/hub-purge-action@main
+- uses: koki-develop/hub-purge-action@v1
   with:
     # Repository name with owner.
     # default - current repository
