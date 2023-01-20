@@ -6,6 +6,28 @@
 
 Action to clear GitHub image caches.
 
+# Usage
+
+```yaml
+- uses: koki-develop/hub-purge-action@main
+  with:
+    # Repository name with owner.
+    # default - current repository
+    repository: koki-develop/koki-develop
+
+    # Branch name.
+    # default - default branch
+    branch: main
+
+    # The path to the file containing the images for which you want to clear the cache.
+    # Multiple paths can also be specified by separating them with a newline.
+    # default - "README.md"
+    path: path/to/README.md
+    # path: |
+    #   path/to/README.md
+    #   path/to/README.ja.md
+```
+
 # LICENSE
 
 [MIT](./LICENSE)
