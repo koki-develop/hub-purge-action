@@ -61,8 +61,9 @@ const main = async () => {
 
     // clear caches
     for (const url of urls) {
-      // TODO: clear
-      console.log(url);
+      core.info(`Purging: ${url}`);
+      await axios.request({ url, method: "PURGE" });
+      core.info("Purged.");
     }
   }
 };
