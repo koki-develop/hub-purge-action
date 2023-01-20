@@ -4,6 +4,16 @@ inputs:
   token:
     description: GitHub Secret Token.
     required: true
+  repository:
+    description: Repository name with owner.
+    required: false
+  branch:
+    description: Branch name.
+    required: false
+  paths:
+    description: The path to the file containing the images for which you want to clear the cache.
+    required: false
+    default: README.md
 runs:
   using: "node16"
   main: "dist/index.js"
