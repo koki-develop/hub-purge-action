@@ -1,9 +1,6 @@
 name: "Hub Purge"
 description: "Action to clear GitHub image caches."
 inputs:
-  token:
-    description: GitHub Secret Token.
-    required: true
   repository:
     description: Repository name with owner.
     required: false

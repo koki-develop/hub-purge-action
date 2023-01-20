@@ -21,9 +21,6 @@ const main = async () => {
   // paths
   const paths = (core.getInput("paths") || "README.md").trim().split("\n");
 
-  // token
-  const octokit = github.getOctokit(core.getInput("token"));
-
   // branch
   const branch = await (async () => {
     const branch = core.getInput("branch");
@@ -31,9 +28,8 @@ const main = async () => {
       return branch;
     }
 
-    // get default branch
-    const { data: repoData } = await octokit.rest.repos.get({ owner, repo });
-    return repoData.default_branch;
+    // NOTE: Specifying `master` as the branch name redirects to the default branch.
+    return "master";
   })();
 
   /*
