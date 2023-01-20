@@ -7,8 +7,10 @@ inputs:
   branch:
     description: Branch name.
     required: false
-  paths:
-    description: The path to the file containing the images for which you want to clear the cache.
+  path:
+    description: |
+      The path to the file containing the images for which you want to clear the cache.
+      Multiple paths can also be specified by separating them with a newline.
     required: false
     default: README.md
 runs:

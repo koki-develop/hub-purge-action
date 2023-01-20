@@ -19,7 +19,7 @@ const main = async () => {
   })();
 
   // paths
-  const paths = (core.getInput("paths") || "README.md").trim().split("\n");
+  const paths = (core.getInput("path") || "README.md").trim().split("\n");
 
   // branch
   const branch = await (async () => {
