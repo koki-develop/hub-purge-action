@@ -35141,9 +35141,7 @@ const main = async () => {
 
     // get camo urls
     const urls = $("img[src^='https://camo.githubusercontent.com/']").map(
-      (_, img) => {
-        $(img).attr("src");
-      }
+      (_, img) => $(img).attr("src")
     );
 
     // clear caches
