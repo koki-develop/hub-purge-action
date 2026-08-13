@@ -113,10 +113,10 @@
   dependencies:
     "@octokit/openapi-types" "^12.11.0"
 
-"@vercel/ncc@^0.36.0":
-  version "0.36.1"
-  resolved "https://registry.yarnpkg.com/@vercel/ncc/-/ncc-0.36.1.tgz#d4c01fdbbe909d128d1bf11c7f8b5431654c5b95"
-  integrity sha512-S4cL7Taa9yb5qbv+6wLgiKVZ03Qfkc4jGRuiUQMQ8HGBD5pcNRnHeYM33zBvJE4/zJGjJJ8GScB+WmTsn9mORw==
+"@vercel/ncc@^0.45.0":
+  version "0.45.0"
+  resolved "https://registry.yarnpkg.com/@vercel/ncc/-/ncc-0.45.0.tgz#e1e2424d9eb0dbb3a8fa7067e36e0da96d42a316"
+  integrity sha512-8zPi1yO2mHpoKTD+e+Bf0ZT3e+sWHSOyGapm9s7b5R0gxJi3CiFTqmeQiMEyu6ejrz2s09M8JkEoUaTWjBJPQQ==
 
 asynckit@^0.4.0:
   version "0.4.0"
